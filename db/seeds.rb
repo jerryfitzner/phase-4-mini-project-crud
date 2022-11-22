@@ -1,5 +1,7 @@
 puts "🌱 Seeding spices..."
 
+Spice.destroy_all
+
 # Spice Data from spicejungle.com
 Spice.create!([
   {
@@ -64,6 +66,13 @@ Spice.create!([
     description: "A shady root of questionable background as it is neither a horse nor a radish.",
     notes: "Hot, Smoky",
     rating: "1"
+  },
+  {
+    title: "Cinnamon",
+    image: "https://p1.pxfuel.com/preview/110/282/483/cooking-vegetable-fresh-root-carrot-natural.jpg",
+    description: "A shady root of questionable background as it is neither a horse nor a radish.",
+    notes: "Yummo in my tummo",
+    rating: "10"
   }
 ])
 
